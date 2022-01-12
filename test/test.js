@@ -3,11 +3,11 @@
 
 const { expect } = require('chai');
 
-const calculaSituacao = require('../student/finalStudentCalculate');
+const { finalCalculate } = require('../student/finalCalculate');
 
 describe('Quando a média for menor que 7', () => {
   it('retorna "reprovado"', () => {
-    const answer = finalStudentCalculate(4);
+    const answer = finalCalculate(4);
 
     expect(answer).to.be.equals('reprovado');
   });
